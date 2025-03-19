@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 require('dotenv').config();
 mongoose
   .connect(
-    `mongodb+srv://VibhaStree:lBFru3LeB1u3xzRk@vibhastree.iflzw.mongodb.net/Vibha-Stree`,{
-      serverSelectionTimeoutMS: 60000, // Increase timeout to 60 seconds
+    `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@vibhastree.iflzw.mongodb.net/Vibha-Stree`,{
+      serverSelectionTimeoutMS: 60000,
       socketTimeoutMS: 45000, 
     })
   .then(() => {

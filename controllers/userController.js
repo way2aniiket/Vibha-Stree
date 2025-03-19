@@ -15,7 +15,6 @@ module.exports ={
     
             if (category === "all") {
                 products = await productModel.find();
-                console.log("products",products)
             } else {
                 products = await productModel.find({ category: category });
             }
