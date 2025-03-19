@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 require('dotenv').config();
 mongoose
   .connect(
-    `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@vibhastree.iflzw.mongodb.net/Vibha-Stree`)
+    `mongodb+srv://vibhastree:lbfru3leb1u3xzrk@vibhastree.iflzw.mongodb.net/Vibha-Stree`)
   .then(() => {
     console.log("Database is connected");
   })
