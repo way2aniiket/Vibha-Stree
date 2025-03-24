@@ -56,6 +56,9 @@ app.listen(PORT,()=>{
 
 
 app.get("/login", async (req,res) => {
+    res.render("login");
+})
+app.get("/signup", async (req,res) => {
     res.render("signup");
 })
 app.post("/login",async (req,res)=>{

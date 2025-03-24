@@ -3,85 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup/Login</title>
-    <style>
-        body{
-            background-color: seagreen;
-        }
-        .form{
-            display: flex;
-            width: 100%;
-            margin: auto ;
-            margin-top: 150px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-        }
-        .form h1{
-            font-size: 40px;
-            
-        }
-        .signupForm{
-            height: 450px;
-            background-color: white !important;
-            margin-right: 100px !important;
-            border: 1px solid black;
-            border-radius: 7px;
-            width: 30%;
-            margin: 10px;
-            padding: 20px;
-        }
-        .loginForm{
-            height: 400px !important;
-            background-color: white !important;
-            border: 1px solid black;
-            border-radius: 7px;
-            margin: 10px;
-            width: 30%;
-            padding: 20px;
-            
-        }
-        .loginForm input{
-            padding: auto;
-        }
-        input{
-            height: 20px;
-            width: 400px;
-            border-radius: 5px;
-            border: 1px solid;
-            padding: 10px;
-            margin-bottom: 30px;
-        }
-        .form button{
-            margin-top: 30px !important;
-            padding: 15px;
-            color: white;
-            font-size: 15px;
-            min-width: 100px;
-            border-radius: 10px;
-            border: 1px solid;
-            background-color: seagreen;
-        }
-       
-    </style>
+    <title>Signup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <section class="form">
-        <form action="/signup" class="signupForm" method="post">
-            <h1>Signup</h1>
-            <input type="text" name="fullname" placeholder="Enter fullname"><br>
-            <input type="email" name="email" placeholder="Enter email"><br>
-            <input type="password" name="password" placeholder="Enter a strong password"><br>
-            <button type="submit">Signup</button>
+<body class="bg-gray-100">
+    <center>
+    <a href="/"><img class="h-20 mt-10 justify-center" src="/images/vibha-stree.png" alt="logoooooo" srcset=""></a>
+    </center>
+    <section class="bg-white form text-center rounded  mt-[10%] lg:ml-[35%] lg:mr-[35%]">
+        <form action="/signup" class="loginForm h-fit w-full p-5" method="post">
+            <h1 class="text-4xl mb-10 mt-5">Signup to VibhaStree</h1>
+            <label class="float-left pl-4" for="fullname">Fullname</label>
+            <input class="h-10 w-full lg:w-96 rounded-md border p-2 mb-7 " type="text" name="fullname" placeholder="Enter fullname"><br>
+            <label class="float-left pl-4" for="email">Email</label>
+            <input class="h-10 w-full lg:w-96 rounded-md border p-2 mb-7 " type="email" name="email" placeholder="Enter email"><br>
+            <label class="float-left pl-4" for="password">Password</label>
+            <input class="h-10 w-full lg:w-96 rounded-md border p-2 mb-7 " type="password" name="password" placeholder="Enter a strong password"><br>
+            <button class="bg-green-700 text-white mt-8 p-2 text-xl  w-full rounded-lg" type="submit">Signup</button>
         </form>
-
-        <form action="/login" class="loginForm" method="post">
-            <h1>Login</h1>
-            <input type="text" name="email" id="email" placeholder="Enter your email"><br>
-            <input type="password" name="password" id="password" placeholder="Please enter you password"><br>
-            <button type="submit">Login</button>
-        </form>
-
+        <p class="pb-5">Already have an account?<a class="font-bold active:no-underline" href="/login"> Signup</a></p>
     </section>
     
 </body>
